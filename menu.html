@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olivera Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fullscreen-video-bg" id="videoBg">
+    <video id="bgVideo" autoplay muted loop playsinline
+      style="position:absolute;inset:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;background:transparent !important;margin:0;padding:0;box-shadow:none;border:none;">
+      <source src="videos/olivera-intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-welcome-overlay" id="videoWelcomeOverlay">
+      <h1 id="welcome-title-en" style="display:none;">Welcome to Oliver Coffee</h1>
+      <h1 id="welcome-title-ar" style="display:none;">مرحبًا بكم في أوليفيرا كوفي</h1>
+      <h1 id="welcome-title-ku" style="display:none;">بەخێربێن بوو کافێ ئولیڤێرا</h1>
+      <p style="color:#fff;text-shadow:0 2px 8px #000;font-size:1rem;line-height:0.5;margin-bottom:0;">
+  Please select a category above to view our menu
+</p>
+    </div>
+  </div>
+  <nav class="top-nav">
+    <a id="nav-drinks" href="#drinks-title">🥤 <span data-i18n="drinks">Drinks</span></a>
+    <a id="nav-food" href="#food-title">🍔 <span data-i18n="food">Food</span></a>
+    <a id="nav-shisha" href="#shisha-title">💨 <span data-i18n="shisha">Shisha</span></a>
+    <a id="nav-sweets" href="#sweets-title">🍰 <span data-i18n="sweets">Sweets</span></a>
+  </nav>
+  <div class="container" id="menuContent" style="display:none;">
+
+
+    <!-- Drinks -->
+    <section class="menu-section" id="drinks-section">
+      <h2 id="drinks-title" data-i18n="drinks">Drinks</h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/espreso.jpg" alt="Espresso" />
+          <p id="drink1" data-i18n="espresso">Espresso</p>
+        </div>
+        <div class="item">
+          <img src="images/orange.jpg" alt="Orange Juice" />
+          <p id="drink2" data-i18n="orangeJuice">Orange Juice</p>
+        </div>
+        <div class="item">
+          <img src="images/Cappuccino.jpg" alt="Cappuccino" />
+          <p id="drink3" data-i18n="cappuccino">Cappuccino</p>
+        </div>
+        <div class="item">
+          <img src="images/Latte.jpg" alt="Latte" />
+          <p id="drink4" data-i18n="latte">Latte</p>
+        </div>
+        <div class="item">
+          <img src="images/Americano.jpg" alt="Americano" />
+          <p id="drink5" data-i18n="americano">Americano</p>
+        </div>
+        <div class="item">
+          <img src="images/Turkish Coffee.jpg" alt="Turkish Coffee" />
+          <p id="drink6" data-i18n="turkishCoffee">Turkish Coffee</p>
+        </div>
+        <div class="item">
+          <img src="images/Green Tea.jpg" alt="Green Tea" />
+          <p id="drink7" data-i18n="greenTea">Green Tea</p>
+        </div>
+        <div class="item">
+          <img src="images/Hot Chocolate.jpg" alt="Hot Chocolate" />
+          <p id="drink8" data-i18n="hotChocolate">Hot Chocolate</p>
+        </div>
+        <div class="item">
+          <img src="images/Milkshake.jpg" alt="Milkshake" />
+          <p id="drink9" data-i18n="milkshake">Milkshake</p>
+        </div>
+        <div class="item">
+          <img src="images/Energy Drink.jpg" alt="Energy Drink" />
+          <p id="drink10" data-i18n="energyDrink">Energy Drink</p>
+        </div>
+        <div class="item">
+          <img src="images/Soda.jpg" alt="Soda" />
+          <p id="drink11" data-i18n="soda">Soda</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food -->
+    <section class="menu-section" id="food-section">
+      <h2 id="food-title" data-i18n="food">Food</h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/pizza.jpg" alt="Pizza" />
+          <p id="food1" data-i18n="pizza">Pizza</p>
+        </div>
+        <div class="item">
+          <img src="images/burger.jpg" alt="Burger" />
+          <p id="food2" data-i18n="burger">Burger</p>
+        </div>
+        <div class="item">
+          <img src="images/Shawarma.jpg" alt="Shawarma" />
+          <p id="food3" data-i18n="shawarma">Shawarma</p>
+        </div>
+        <div class="item">
+          <img src="images/Fries.jpg" alt="Fries" />
+          <p id="food4" data-i18n="fries">Fries</p>
+        </div>
+        <div class="item">
+          <img src="images/Caesar Salad.jpg" alt="Caesar Salad" />
+          <p id="food5" data-i18n="caesarSalad">Caesar Salad</p>
+        </div>
+        <div class="item">
+          <img src="images/Beef Steak.jpg" alt="Beef Steak" />
+          <p id="food6" data-i18n="beefSteak">Beef Steak</p>
+        </div>
+        <div class="item">
+          <img src="images/Pasta Alfredo.jpg" alt="Pasta Alfredo" />
+          <p id="food7" data-i18n="pastaAlfredo">Pasta Alfredo</p>
+        </div>
+        <div class="item">
+          <img src="images/Falafel Wrap.jpg" alt="Falafel Wrap" />
+          <p id="food8" data-i18n="falafelWrap">Falafel Wrap</p>
+        </div>
+        <div class="item">
+          <img src="images/Club Sandwich.jpg" alt="Club Sandwich" />
+          <p id="food9" data-i18n="clubSandwich">Club Sandwich</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shisha -->
+    <section class="menu-section" id="shisha-section">
+      <h2 id="shisha-title" data-i18n="shisha">Shisha</h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/mint.jpg" alt="Mint" />
+          <p id="shisha1" data-i18n="mint">Mint</p>
+        </div>
+        <div class="item">
+          <img src="images/Double Apple.jpg" alt="Double Apple" />
+          <p id="shisha2" data-i18n="doubleApple">Double Apple</p>
+        </div>
+        <div class="item">
+          <img src="images/Blueberry.jpg" alt="Blueberry" />
+          <p id="shisha3" data-i18n="blueberry">Blueberry</p>
+        </div>
+        <div class="item">
+          <img src="images/Lemon Mint.jpg" alt="Lemon Mint" />
+          <p id="shisha4" data-i18n="lemonMint">Lemon Mint</p>
+        </div>
+        <div class="item">
+          <img src="images/Peach.jpg" alt="Peach" />
+          <p id="shisha5" data-i18n="peach">Peach</p>
+        </div>
+        <div class="item">
+          <img src="images/Strawberry.jpg" alt="Strawberry" />
+          <p id="shisha6" data-i18n="strawberry">Strawberry</p>
+        </div>
+        <div class="item">
+          <img src="images/Gum with Mint.jpg" alt="Gum with Mint" />
+          <p id="shisha7" data-i18n="gumMint">Gum with Mint</p>
+        </div>
+        <div class="item">
+          <img src="images/Mango.jpg" alt="Mango" />
+          <p id="shisha8" data-i18n="mango">Mango</p>
+        </div>
+        <div class="item">
+          <img src="images/Pineapple.jpg" alt="Pineapple" />
+          <p id="shisha9" data-i18n="pineapple">Pineapple</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sweets -->
+    <section class="menu-section" id="sweets-section">
+      <h2 id="sweets-title" data-i18n="sweets">Sweets</h2>
+      <div class="items">
+        <div class="item">
+          <img src="images/cake.jpg" alt="Cake" />
+          <p id="sweet1" data-i18n="cake">Cake</p>
+        </div>
+        <div class="item">
+          <img src="images/icecream.jpg" alt="Ice Cream" />
+          <p id="sweet2" data-i18n="iceCream">Ice Cream</p>
+        </div>
+        <div class="item">
+          <img src="images/Cheesecake.jpg" alt="Cheesecake" />
+          <p id="sweet3" data-i18n="cheesecake">Cheesecake</p>
+        </div>
+        <div class="item">
+          <img src="images/Brownie.jpg" alt="Brownie" />
+          <p id="sweet4" data-i18n="brownie">Brownie</p>
+        </div>
+        <div class="item">
+          <img src="images/Baklava.jpg" alt="Baklava" />
+          <p id="sweet5" data-i18n="baklava">Baklava</p>
+        </div>
+        <div class="item">
+          <img src="images/Tiramisu.jpg" alt="Tiramisu" />
+          <p id="sweet6" data-i18n="tiramisu">Tiramisu</p>
+        </div>
+        <div class="item">
+          <img src="images/Muffin.jpg" alt="Muffin" />
+          <p id="sweet7" data-i18n="muffin">Muffin</p>
+        </div>
+        <div class="item">
+          <img src="images/Fruit Tart.jpg" alt="Fruit Tart" />
+          <p id="sweet8" data-i18n="fruitTart">Fruit Tart</p>
+        </div>
+        <div class="item">
+          <img src="images/Panna Cotta.jpg" alt="Panna Cotta" />
+          <p id="sweet9" data-i18n="pannaCotta">Panna Cotta</p>
+        </div>
+        <div class="item">
+          <img src="images/Crème Brûlée.jpg" alt="Crème Brûlée" />
+          <p id="sweet10" data-i18n="cremeBrulee">Crème Brûlée</p>
+        </div>
+        <div class="item">
+          <img src="images/Waffle.jpg" alt="Waffle" />
+          <p id="sweet11" data-i18n="waffle">Waffle</p>
+        </div>
+        <div class="item">
+          <img src="images/Pancake.jpg" alt="Pancake" />
+          <p id="sweet12" data-i18n="pancake">Pancake</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Language data
+    const translations = {
+      en: {
+        welcome: "Welcome to Olivera Coffee",
+        selectCategory: "Please select a category above to view our menu",
+        drinks: "Drinks",
+        food: "Food",
+        shisha: "Shisha",
+        sweets: "Sweets",
+        espresso: "Espresso",
+        orangeJuice: "Orange Juice",
+        cappuccino: "Cappuccino",
+        latte: "Latte",
+        americano: "Americano",
+        turkishCoffee: "Turkish Coffee",
+        greenTea: "Green Tea",
+        hotChocolate: "Hot Chocolate",
+        milkshake: "Milkshake",
+        energyDrink: "Energy Drink",
+        soda: "Soda",
+        pizza: "Pizza",
+        burger: "Burger",
+        shawarma: "Shawarma",
+        fries: "Fries",
+        caesarSalad: "Caesar Salad",
+        beefSteak: "Beef Steak",
+        pastaAlfredo: "Pasta Alfredo",
+        falafelWrap: "Falafel Wrap",
+        clubSandwich: "Club Sandwich",
+        mint: "Mint",
+        doubleApple: "Double Apple",
+        blueberry: "Blueberry",
+        lemonMint: "Lemon Mint",
+        peach: "Peach",
+        strawberry: "Strawberry",
+        gumMint: "Gum with Mint",
+        mango: "Mango",
+        pineapple: "Pineapple",
+        cake: "Cake",
+        iceCream: "Ice Cream",
+        cheesecake: "Cheesecake",
+        brownie: "Brownie",
+        baklava: "Baklava",
+        tiramisu: "Tiramisu",
+        muffin: "Muffin",
+        fruitTart: "Fruit Tart",
+        pannaCotta: "Panna Cotta",
+        cremeBrulee: "Crème Brûlée",
+        waffle: "Waffle",
+        pancake: "Pancake"
+      },
+      ar: {
+        welcome: "مرحبًا بكم في أوليفيرا كوفي",
+        selectCategory: "يرجى اختيار قسم من الأعلى لعرض قائمتنا",
+        drinks: "المشروبات",
+        food: "الطعام",
+        shisha: "النرکيلە",
+        sweets: "الحلويات",
+        espresso: "إسبريسو",
+        orangeJuice: "عصير برتقال",
+        cappuccino: "كابتشينو",
+        latte: "لاتيه",
+        americano: "أمريكانو",
+        turkishCoffee: "قه‌وەی تورکی",
+        greenTea: "چای سه‌وز",
+        hotChocolate: "شوكولاتة ساخنة",
+        milkshake: "ميلك شيك",
+        energyDrink: "مشروب طاقة",
+        soda: "صودا",
+        pizza: "بيتزا",
+        burger: "برجر",
+        shawarma: "شاورما",
+        fries: "بطاطا مقلية",
+        caesarSalad: "سلطة سيزر",
+        beefSteak: "ستيك لحم",
+        pastaAlfredo: "باستا ألفريدو",
+        falafelWrap: "لفائف فلافل",
+        clubSandwich: "ساندويتش كلوب",
+        mint: "نعناع",
+        doubleApple: "تفاحتين",
+        blueberry: "توت أزرق",
+        lemonMint: "ليمون ونعناع",
+        peach: "خوخ",
+        strawberry: "فراولة",
+        gumMint: "علكة مع نعناع",
+        mango: "مانجو",
+        pineapple: "أناناس",
+        cake: "كيك",
+        iceCream: "آيس كريم",
+        cheesecake: "تشيز كيك",
+        brownie: "براوني",
+        baklava: "بقلاوة",
+        tiramisu: "تيراميسو",
+        muffin: "مافن",
+        fruitTart: "تارت الفواكه",
+        pannaCotta: "باننا كوتا",
+        cremeBrulee: "كرام بروليه",
+        waffle: "وافل",
+        pancake: "بان كيك"
+      },
+      ku: {
+        welcome: "بەخێربێن بۆ کافێ Olivera",
+        selectCategory: "تکایە لەسەرەوە پۆلێک هەلبژێرە بۆ بینینی لیستی خواردنەکان",
+        drinks: "خواردنەوەکان",
+        food: "خواردن",
+        shisha: "نرکێلە",
+        sweets: "شیرینی",
+        espresso: "ئەسپرسۆ",
+        orangeJuice: "ئەنارەنگ",
+        cappuccino: "کاپوچینو",
+        latte: "لاتێ",
+        americano: "ئەمریکانۆ",
+        turkishCoffee: "قه‌وەی تورکی",
+        greenTea: "چای سه‌وز",
+        hotChocolate: "شوکۆلاتی گەرەم",
+        milkshake: "شەیک",
+        energyDrink: "خواردنی هێزی",
+        soda: "سودا",
+        pizza: "پیتزا",
+        burger: "بەرگەر",
+        shawarma: "شاوارما",
+        fries: "پۆمفریت",
+        caesarSalad: "سالادی سیزەر",
+        beefSteak: "گوشت",
+        pastaAlfredo: "پاستای ئەلفرێدو",
+        falafelWrap: "فلافل",
+        clubSandwich: "ساندویچی کلوب",
+        mint: "نەعناع",
+        doubleApple: "سێو دوو دانە",
+        blueberry: "توتی شین",
+        lemonMint: "لیموو و نەعناع",
+        peach: "هەڵۆ",
+        strawberry: "توت فرەنگی",
+        gumMint: "ژێلی نەعناع",
+        mango: "مانگۆ",
+        pineapple: "ئەنەناس",
+        cake: "کێک",
+        iceCream: "دووپ",
+        cheesecake: "کێکی پەنیر",
+        brownie: "براونی",
+        baklava: "باقلەوا",
+        tiramisu: "تیرامیسو",
+        muffin: "مافین",
+        fruitTart: "تارتی میوە",
+        pannaCotta: "پانا کۆتا",
+        cremeBrulee: "کرێم برولێ",
+        waffle: "وافڵ",
+        pancake: "پانکێک"
+      }
+    };
+
+    // Get lang from URL
+    function getLang() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('lang') || 'en';
+    }
+
+    // Update all elements with data-i18n attribute
+    function updateLanguage(lang) {
+      const dict = translations[lang] || translations.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      // Update welcome overlay text
+      const welcomeOverlay = document.querySelector('#videoWelcomeOverlay p');
+      if (welcomeOverlay && dict.selectCategory) {
+        welcomeOverlay.textContent = dict.selectCategory;
+        if (lang === 'ar' || lang === 'ku') {
+          welcomeOverlay.style.direction = 'rtl';
+          welcomeOverlay.style.textAlign = 'center';
+        } else {
+          welcomeOverlay.style.direction = 'ltr';
+          welcomeOverlay.style.textAlign = 'center';
+        }
+      }
+      // Optional: Change direction for Arabic/Kurdish
+      if (lang === 'ar' || lang === 'ku') {
+        document.body.dir = "rtl";
+      } else {
+        document.body.dir = "ltr";
+      }
+    }
+
+    function showWelcomeTitle(lang) {
+      document.getElementById('welcome-title-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('welcome-title-ar').style.display = (lang === 'ar') ? 'block' : 'none';
+      document.getElementById('welcome-title-ku').style.display = (lang === 'ku') ? 'block' : 'none';
+    }
+
+    function setActiveNav(link) {
+      document.querySelectorAll('.top-nav a').forEach(a => a.classList.remove('active'));
+      link.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const lang = getLang();
+      showWelcomeTitle(lang);
+      updateLanguage(lang);
+
+      const sections = document.querySelectorAll('.menu-section');
+      const navLinks = document.querySelectorAll('.top-nav a');
+
+      // Hide all sections on load
+      sections.forEach(sec => {
+        sec.style.display = 'none';
+        sec.classList.remove('menu-section-visible');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          // Hide video background
+          var videoBg = document.getElementById('videoBg');
+          if (videoBg) videoBg.style.display = 'none';
+          // Show menu content
+          var menuContent = document.getElementById('menuContent');
+          if (menuContent) menuContent.style.display = 'block';
+          // Hide all menu sections
+          sections.forEach(sec => {
+            sec.style.display = 'none';
+            sec.classList.remove('menu-section-visible');
+          });
+          // Show only the selected section with animation
+          const hash = this.getAttribute('href').replace('#', '');
+          let sectionId = '';
+          if (hash === 'drinks-title') sectionId = 'drinks-section';
+          if (hash === 'food-title') sectionId = 'food-section';
+          if (hash === 'shisha-title') sectionId = 'shisha-section';
+          if (hash === 'sweets-title') sectionId = 'sweets-section';
+          if (sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+              section.style.display = 'block';
+              // Force reflow for animation
+              void section.offsetWidth;
+              section.classList.add('menu-section-visible');
+            }
+          }
+          setActiveNav(this);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
