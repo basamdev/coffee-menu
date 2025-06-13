@@ -1,4 +1,4 @@
-# Olivera Coffee Menu
+![image](https://github.com/user-attachments/assets/5882c0d1-be5b-4deb-87e9-58db19f1b391)# Olivera Coffee Menu
 
 A modern, multilingual digital menu for Olivera Coffee, featuring a beautiful UI, category navigation, and support for English, Arabic, and Kurdish. Built with HTML, CSS, and JavaScript—no frameworks required.
 
@@ -27,7 +27,8 @@ A quick look at the Olivera Coffee digital menu:
 
 🎬 The welcome page features a background intro video (`olivera-intro.mp4`) that plays automatically for a modern feel.
 
-![image](https://github.com/user-attachments/assets/0480df6b-9801-430f-b9a8-208dbda6f5c4)
+![image](![image](https://github.com/user-attachments/assets/044369f0-91c4-4e2a-bfc8-1869a636fa48)
+)
 
 
 
@@ -38,7 +39,8 @@ Here are the main pages of the website:
 
 | Welcome Page             | Menu Page               |
 |--------------------------|-------------------------|
-| ![Welcome](https://github.com/user-attachments/assets/d8df5f98-8327-4bff-92d8-b870cce19ac0) | ![Menu](https://github.com/user-attachments/assets/efa53984-c110-49d4-88cf-5db9e33155e5) |
+| ![Welcome](![image](https://github.com/user-attachments/assets/00a55b56-1db3-4925-9328-3706a0e3bf5d)) | ![Menu](![image](https://github.com/user-attachments/assets/27373879-a3d1-4ec8-af46-b0a7639a2e08)
+) |
 
 ---
 
