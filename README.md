@@ -27,7 +27,7 @@ A quick look at the Olivera Coffee digital menu:
 
 🎬 The welcome page features a background intro video (`olivera-intro.mp4`) that plays automatically for a modern feel.
 
-![Welcome Video Screenshot](![image](https://github.com/user-attachments/assets/05905e8e-921b-4663-8525-ef3bf7c0920f)
+(![image](https://github.com/user-attachments/assets/05905e8e-921b-4663-8525-ef3bf7c0920f)
 
 ## Screenshots
 
